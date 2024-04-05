@@ -1,0 +1,132 @@
+body,html{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    background: #19A1AE;
+}
+.back-cont{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    margin: 0;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#pattern-top{
+    position: absolute;
+    left: -50%;
+    top: -50%;
+    z-index: 0;
+}
+#pattern-bot{
+    position: absolute;
+    right: -50%;
+    bottom: -50%;
+    z-index: 0;
+}
+.profile-card{
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 374px;
+    flex-shrink: 0;
+    border-radius: 15px;
+    background: #FFF;
+    box-shadow: 0px 50px 100px -20px rgba(8, 70, 94, 0.50);
+}
+.card-background{
+    border-radius: 15px;
+}
+#card-back{
+    border-radius: 15px 15px 0 0;
+}
+.card-info{
+    display: inherit;
+    flex-direction: column;
+}
+#pfp{
+    align-self: center;
+    margin: 0;
+    margin-top: -3.5rem;
+    border-radius: 96px;
+    border: 5px solid #FFF;
+}
+.name-age-country{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.name-age{
+    display: flex;
+    justify-content: space-around;
+}
+#name{
+    color: #2E3349;
+    text-align: center;
+    font-family: "Kumbh Sans";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+#age{
+    margin-left: 1rem;
+    color: #6B7082;
+    text-align: center;
+    font-family: "Kumbh Sans";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+#country{
+    margin: 0;
+    margin-bottom: 2em;
+    color: #6B7082;
+    text-align: center;
+    font-family: "Kumbh Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.card-stats{
+    align-items: center;
+    justify-content: space-evenly;
+    display: flex;
+}
+.num{
+    margin: 0;
+    color: #2E3349;
+    text-align: center;
+    font-family: "Kumbh Sans";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.stat{
+    color: #6B7082;
+    text-align: center;
+    font-family: "Kumbh Sans";
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1.5px;
+}
+@media screen and (max-width:480px) {
+    #pattern-top{
+        left: -45rem;
+        top: -40rem;
+    }
+    #pattern-bot{
+        right: -45rem;
+        bottom: -40rem;
+    }
+}

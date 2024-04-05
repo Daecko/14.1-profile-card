@@ -3,33 +3,48 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100..900;1,100..900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Kumbh+Sans:wght@100..900&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Overpass:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
   <title>Frontend Mentor | Profile card component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
-  Victor Crest
-  26
-  London
+  <section class="back-cont">
+    <img id="pattern-top" src="images/bg-pattern-top.svg" alt="circle-pattern">
+    <img id="pattern-bot" src="images/bg-pattern-bottom.svg" alt="circle-pattern">
+    <section class="profile-card">
+      <section class="card-background">
+        <img id="card-back" src="images/bg-pattern-card.svg" alt="card-background">
+      </section>
+      <section class="card-info">
+        <img id="pfp" src="images/image-victor.jpg" alt="pfp">
+        <section class="name-age-country">
+          <section class="name-age">
+            <p id="name">Victor Crest</p>
+            <p id="age">26</p>
+          </section>
+          <p id="country">London</p>
+        </section>
+        <section class="card-stats">
+          <section class="stats">
+            <p class="num">80K</p>
+            <p class="stat">Followers</p>
+          </section>
+          <section class="stats">
+            <p class="num">803K</p>
+            <p class="stat">Likes</p>
+          </section>
+          <section class="stats">
+            <p class="num">1.4K</p>
+            <p class="stat">Photos</p>
+          </section>
+        </section>
+      </section>
+    </section>
+  </section>
 
-  80K
-  Followers
-
-  803K
-  Likes
-
-  1.4K
-  Photos
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  <script src="main.js"></script>
 </body>
 </html>
